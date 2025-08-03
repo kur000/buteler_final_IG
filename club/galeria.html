@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagenes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">    
+</head>
+<body id="gallery-body">
+
+    <header id="header">
+        <a href="../index.html"><img src="../images/corio-logo.png" alt="logo"></a>
+        <img src="../images/nav-icon.svg" alt="menu-icon" id="nav-icon">
+    </header>
+    
+    <nav id="navbar">
+        <ul>
+            <li class="nav-item dropdown" id="nav-club"><a href="index.html">CLUB</a>                
+                <ul class="dropdown-content">
+                    <li><a href="talleres.html">Talleres</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="../cartelera/index.html">CARTELERA</a></li>
+            <li class="nav-item dropdown" id="nav-ciclos"><a href="../ciclos/index.html">CICLOS</a>
+                <ul class="dropdown-content">
+                    <li><a href="../ciclos/ciclos1.html">Este mes</a></li>
+                    <li><a href="../ciclos/ciclos2.html">Ciclos pasados</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="/juego/index.html" id="link-juego">JUGUEMOS</a></li>
+            <li class="nav-item" id="nav-contactos"><a href="/contacto/index.html" id="link-contacto">CONTACTO</a></li>
+            <li class="nav-item"><a href="/datos-alumno/index.html" id="alumno">ALUMNO</a></li>
+        </ul>
+    </nav>
+
+    <section id="galeria" class="expandir">
+        <img src="../images/galeria/camille.png" alt="escena-camille" class="img-galeria" id="1" onclick="openGallery(1)">
+        <img src="../images/galeria/vertigo.png" alt="escena-vertigo" class="img-galeria" id="2" onclick="openGallery(2)">
+        <img src="../images/galeria/shining.png" alt="escena-the-shining" class="img-galeria" id="3" onclick="openGallery(3)">
+        <img src="../images/galeria/oldboy.png" alt="escena-oldboy" class="img-galeria" id="4" onclick="openGallery(4)">
+        <img src="../images/galeria/nosferatu.jpeg" alt="escena-nosferatu" class="img-galeria" id="5" onclick="openGallery(5)">
+        <img src="../images/galeria/kane.png" alt="escena-citizen-kane" class="img-galeria" id="6" onclick="openGallery(6)">
+        <img src="../images/galeria/godfather.png" alt="escena-godfather" class="img-galeria" id="7" onclick="openGallery(7)">
+        <img src="../images/galeria/county.png" alt="escena-no-county-for-old-man" class="img-galeria" id="8" onclick="openGallery(8)">
+    </section>
+
+    <div id="slide-show">
+        <span id="x">x</span>
+        <img src="" id="img-display" alt="imagen-galeria">
+    </div>
+
+    <span class="separador"></span>
+
+    <footer id="pie">
+        <ul>
+            <li class="links-footer"><a href="../contacto/index.html">Contacto</a></li>
+            <li class="links-footer"><a href="../contacto/faq.html">FAQs</a></li>
+            <li class="links-footer"><a href="../datos-alumno/index.html">Alumno</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/galeria.js"></script>    
+
+</body>
+</html>
