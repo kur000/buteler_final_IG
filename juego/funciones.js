@@ -75,11 +75,13 @@ function pantallaJuego() {
     // Cambiar nivel cada 10 segundos (10,000 milisegundos)
     if (gameTime > level * 10000) {
       level++;
-      if (level > backgrounds.length) level = backgrounds.length; // Máximo nivel
-      increaseDifficulty(); // Incrementar dificultad
+
       if (level == 5) {
         currentScreen = "ganaste";
       }
+      
+      if (level > backgrounds.length) level = backgrounds.length; // Máximo nivel
+      increaseDifficulty(); // Incrementar dificultad
     }
   }
 }
