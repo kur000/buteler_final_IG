@@ -24,11 +24,7 @@ class Player {
     } else {
       image(playerGameOverImg, this.x, this.y, this.size, this.size);
     }
-    if (currentScreen === "gameOver")
-      {
-         image(playerGameOverImg, this.x, this.y, this.size, this.size);
-        
-      }
+
   }
 
   move() {
@@ -62,8 +58,7 @@ class FallingObject {
 
 // Función para verificar colisiones 
 function collides(player, obj) {
-  return (
-  return (
+return (
   obj.x + obj.size / 2 > player.x &&
   obj.x - obj.size / 2 < player.x + player.size &&
   obj.y + obj.size / 2 > player.y &&
