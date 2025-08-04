@@ -35,7 +35,7 @@ entradas.forEach(entrada => {
         if (path.includes('../cartelera/')) {
              urlEntradas = "entradas.html";
         } else {
-             urlEntradas = "../cartelera/entradas.html";
+             urlEntradas = "cartelera/entradas.html";
         }
         window.location.href = urlEntradas;
         console.log('click');
@@ -98,4 +98,5 @@ function validate() {
     } 
     
 }
+
 
