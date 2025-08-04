@@ -62,11 +62,12 @@ class FallingObject {
 
 // Función para verificar colisiones 
 function collides(player, obj) {
-  let collisionMargin = player.size * 0.5; // Ajustar el área de colisión al tamaño 
   return (
-    obj.x + obj.size / 2 > player.x + player.size / 2 - collisionMargin &&
-    obj.x - obj.size / 2 < player.x + player.size / 2 + collisionMargin &&
-    obj.y + obj.size / 2 > player.y + player.size / 2 - collisionMargin &&
-    obj.y - obj.size / 2 < player.y + player.size / 2 + collisionMargin
-  );
+  return (
+  obj.x + obj.size / 2 > player.x &&
+  obj.x - obj.size / 2 < player.x + player.size &&
+  obj.y + obj.size / 2 > player.y &&
+  obj.y - obj.size / 2 < player.y + player.size
+);
+
 }
